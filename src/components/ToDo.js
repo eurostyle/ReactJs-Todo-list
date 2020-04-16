@@ -12,7 +12,6 @@ export default function ToDo(props) {
                 {props.todo.text}
             </div>
             <button className="btn btn-x" onClick={props.onDelete}>x</button>
-            <button className="btn" onClick={props.onEdit}>Edit</button>
          </div>
     )
 }

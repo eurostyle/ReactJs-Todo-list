@@ -10,7 +10,6 @@ export default class ToDoList extends Component {
       todos: [],
       todoToShow: "all",
       text: "",
-      edited: "",
     };
   }
 
@@ -48,16 +47,6 @@ export default class ToDoList extends Component {
     });
   };
 
-  handleEditTodo = (id) => {
-      this.state.todos.map((todo) => {
-          if (todo.id === id) {
-           this.setState({
-               text: todo.text = 'labas'
-           })
-          }
-      })
-  }
-
   render() {
     let todos = [];
 
@@ -77,7 +66,6 @@ export default class ToDoList extends Component {
             key={todo.id}
             toggleComplete={() => this.toggleComplete(todo.id)}
             onDelete={() => this.handleDeleteTodo(todo.id)}
-            onEdit={() => this.handleEditTodo(todo.id)}
             todo={todo}
           />
         ))}
