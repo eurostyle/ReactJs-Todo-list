@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.crossed {
+  text-decoration: line-through;
+  text-decoration-color: seagreen;
+  color: seagreen;
+  display: flex;
+  border-bottom: 1px solid #61dafb;
+  flex-grow: 1;
+  line-height: 2rem;
+  padding-right: 10px;
+ 
+}
+
+.crossed:hover {
+  cursor: pointer;
+}
+.container {
+  width: 70%;
+  max-width: 1060px;
+  margin: auto;
+  
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row-reverse;
+}
+
+input {
+  display: flex;
+  flex-grow: 1;
+  height: 30px;
+  font-size: 20px;
+  color: #3f3f3f;
+  border: none;
+  border-bottom: 1px solid #61dafb;
+  outline: none;
+  padding-left: 10px;
+  
+}
+
+input::placeholder {
+  color: #61dafb;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #61dafb;
+  color:white;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 1px 3px 3px #3f3f3f52;
+}
+
+.btn:hover {
+  background-color: #58c5e4;
+}
+
+.btn:active {
+  background-color: #58c5e4;
+  box-shadow: 0px 1px 2px #3f3f3f81;  
+}
+
+.btn-x {
+  margin: 4px 0px 4px ;
+}
+
+.todo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+   
+}
+
+.todo-line {
+  display: flex;
+  border-bottom: 1px solid #61dafb;
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 3rem;
+  color:#3f3f3f;
+  padding: 0px 10px;
+}
+
+.todo-line:hover {
+  cursor: pointer;
+}
+
+.text-color-blue {
+  color: #61dafb;
+}
+
+.btn-group {
+  margin: 10px 20px;
+  padding: 5px 10px;
+  min-width: 150px;
 }
